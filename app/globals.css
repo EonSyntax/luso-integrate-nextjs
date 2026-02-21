@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #bad955;
+  --accent-gold: #d4af37;
+  --background-light: #f5f7f8;
+  --background-dark: #0f332f;
+  --surface-dark: #143d38;
+}
+
+@theme inline {
+  --font-inter: var(--font-inter);
+  --font-manrope: var(--font-manrope);
+  --color-primary: var(--primary);
+  --color-accent-gold: var(--accent-gold);
+  --color-background-light: var(--background-light);
+  --color-background-dark: var(--background-dark);
+  --color-surface-dark: var(--surface-dark);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  padding-top: 5rem;
+}
+
+.glass-nav {
+  background: rgba(15, 51, 47, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(186, 217, 85, 0.1);
+}
+.hero-gradient {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(186, 217, 85, 0.15) 0%,
+    rgba(15, 51, 47, 1) 100%
+  );
+}
+.animate-marquee {
+  display: flex;
+  width: calc(250px * 10);
+  animation: scroll 30s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 5));
+  }
+}
