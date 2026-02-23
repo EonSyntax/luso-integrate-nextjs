@@ -1,31 +1,71 @@
+import Link from "next/link";
 import React from "react";
 
 export default function About() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10 dark:opacity-20">
-          <div className="absolute top-0 right-0 w-125 h-125 bg-primary rounded-full blur-[120px] -mr-64 -mt-64"></div>
-          <div className="absolute bottom-0 left-0 w-125 h-125 bg-primary rounded-full blur-[120px] -ml-64 -mb-64"></div>
+      <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        {/* <!-- Background Image with Cinematic Overlay --> */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/40 to-background-dark/90 z-10"></div>
+          <div className="absolute inset-0 bg-black/30 z-10"></div>
+          <img
+            alt="Modern minimalist workspace with large windows"
+            className="w-full h-full object-cover scale-105"
+            data-alt="Cinematic wide shot of a luxury modern office workspace"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyjgmTxXNvk1pTh5B5g_JcxcjMoqSiAd2c9DS1jRHrWqdr_SmVuXeh9NEwYIKbqDBepj6pw4DAqniv9n0n3W67C21c8cFLf6UzUjMVB6ElDwE2xBjaXw0JSVRoZVSRwJ92Dwp5NQKkK09nRY2YyVk9tWyNJESLv9XOhTgQNy2LEG30aM0Lb98ok1fpGZLWDFv5O18_SdfWE0rQoT_6dfQn7FJuo3OcBdKRZfDTqfT5SVKkSMXEBXqNQtw3Z92R3gGhuGlG7TZ57xiB"
+          />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-primary/20 text-slate-900 dark:text-primary rounded-full">
-            Our Story
-          </span>
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-            Innovation, Strategy, <span className="text-primary">Growth.</span>
+        {/* <!-- Content Container --> */}
+        <div className="relative z-20 w-full max-w-5xl px-6 text-center">
+          <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight mb-8">
+            Innovation, Strategy <br />{" "}
+            <span className="text-primary">Growth.</span>
           </h1>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-10">
-            Empowering businesses with forward-thinking solutions and strategic
-            excellence for sustainable, long-term global impact.
+          <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
+            We combine high-end design and cutting-edge technology to bring your
+            vision to life. Let’s discuss your next big idea today.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2">
-              View Our Work{" "}
+          <Link href="/services" className="flex flex-col sm:flex-row items-center justify-center gap-5">
+            <button className="w-full sm:w-auto min-w-55 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white h-16 px-6 rounded-xl text-lg font-bold transition-all flex items-center justify-center gap-2">
+              <span>View Our Work</span>
               <span className="material-symbols-outlined">arrow_forward</span>
             </button>
+          </Link>
+          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-50">
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-white font-bold text-2xl">150+</span>
+              <span className="text-white/60 text-xs uppercase tracking-tighter">
+                Projects Done
+              </span>
+            </div>
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-white font-bold text-2xl">12</span>
+              <span className="text-white/60 text-xs uppercase tracking-tighter">
+                Design Awards
+              </span>
+            </div>
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-white font-bold text-2xl">99%</span>
+              <span className="text-white/60 text-xs uppercase tracking-tighter">
+                Happy Clients
+              </span>
+            </div>
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-white font-bold text-2xl">24h</span>
+              <span className="text-white/60 text-xs uppercase tracking-tighter">
+                Response Time
+              </span>
+            </div>
           </div>
+        </div>
+        {/* <!-- Scroll Indicator --> */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
+          <span className="text-white/30 text-[10px] uppercase tracking-[0.3em] font-bold">
+            Discover
+          </span>
+          <div className="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
         </div>
       </section>
 

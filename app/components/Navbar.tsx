@@ -2,62 +2,40 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <nav className="fixed font-inter top-0 w-full z-50 glass-nav transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="text-primary flex items-center">
-            <span className="material-symbols-outlined text-4xl font-bold">
-              account_tree
-            </span>
-          </div>
-          <span className="text-xl font-black tracking-tighter uppercase text-primary">
-            LUSO INTEGRATE
+    <>
+      <header className="fixed top-0 left-0 w-full z-50 px-6 py-6 lg:px-12 flex items-center justify-between">
+        <Link href="/" className="cursor-pointer bg-primary hover:bg-primary/90 px-4 py-2 rounded-full font-bold transition-all transform active:scale-95 shadow-lg shadow-primary/20">
+          <span className="text-2xl font-black text-white tracking-tight">
+            LUSO <span className="text-background-dark">INTEGRATE</span>
           </span>
-        </div>
-        <div className="hidden lg:flex items-center gap-10">
+        </Link>
+        <nav className="hidden md:flex items-center gap-8 bg-background-dark/15 backdrop-blur-md px-8 py-3 rounded-full border border-white/10">
           <Link
-            className="text-sm font-semibold text-slate-300 hover:text-primary transition-colors"
-            href="/"
-          >
-            Home
-          </Link>
-          <Link
-            className="text-sm font-semibold text-slate-300 hover:text-primary transition-colors"
+            className="text-sm font-medium uppercase text-white dark:text-slate-300 hover:text-primary transition-colors"
             href="/about"
           >
             About
           </Link>
           <Link
-            className="text-sm font-semibold text-slate-300 hover:text-primary transition-colors"
+            className="text-sm uppercase font-medium text-white dark:text-slate-300 hover:text-primary transition-colors"
             href="/services"
           >
             Services
           </Link>
           <Link
-            className="text-sm font-semibold text-slate-300 hover:text-primary transition-colors"
+            className="text-sm uppercase font-medium text-white dark:text-slate-300 hover:text-primary transition-colors"
             href="/blog"
           >
             Blog
           </Link>
-          <Link
-            className="text-sm font-semibold text-slate-300 hover:text-primary transition-colors"
-            href="/contact"
-          >
+          <Link className="text-sm uppercase font-medium text-primary" href="/contact">
             Contact
           </Link>
-        </div>
-        <div className="flex items-center gap-4">
-          <Link
-            className="hidden md:block bg-primary hover:bg-primary/90 px-6 py-2.5 rounded-lg text-sm font-bold transition-all transform active:scale-95"
-            href="/pricing"
-          >
-            Get a Quote
-          </Link>
-          <button className="lg:hidden">
-            <span className="material-symbols-outlined">menu</span>
-          </button>
-        </div>
-      </div>
-    </nav>
+        </nav>
+        <button className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all transform active:scale-95 shadow-lg shadow-primary/20">
+          Get a Quote
+        </button>
+      </header>
+    </>
   );
 };

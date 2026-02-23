@@ -7,10 +7,7 @@ export const BlogNavbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <span className="material-symbols-outlined text-4xl font-bold">
-              account_tree
-            </span>
+          <Link href="/" className="">
             <span className="text-background-dark dark:text-white text-xl font-black tracking-tight">
               LUSO <span className="text-primary">INTEGRATE</span>
             </span>
@@ -27,16 +24,7 @@ export const BlogNavbar = () => {
               className="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
               href="#"
             >
-              Solutions
-            </a>
-            <a
-              className="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
-              href="#"
-            >
-              Case Studies
-            </a>
-            <a className="text-sm font-semibold text-primary" href="#">
-              Insights
+              Services
             </a>
             <Link
               className="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-primary transition-colors"
@@ -50,9 +38,9 @@ export const BlogNavbar = () => {
             <button className="p-2 text-slate-500 hover:text-primary transition-colors">
               <span className="material-symbols-outlined">search</span>
             </button>
-            <button className="hidden sm:flex bg-background-dark dark:bg-brand-accent dark:text-background-dark text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:opacity-90 transition-all shadow-sm">
+            <Link href="/contact" className="hidden sm:flex bg-background-dark dark:bg-brand-accent dark:text-background-dark text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:opacity-90 transition-all shadow-sm">
               Contact Us
-            </button>
+            </Link>
             <div className="w-10 h-10 rounded-full bg-slate-200 border-2 border-brand-lime overflow-hidden">
               <img
                 className="w-full h-full object-cover"

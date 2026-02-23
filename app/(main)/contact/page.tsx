@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <main className="grow max-w-7xl font-manrope mx-auto px-6 py-12 md:py-20 w-full">
       {/* Hero Section Title */}
-      <div className="mb-16 text-center md:text-left">
+      <div className="mb-16 pt-20 text-center md:text-left">
         <h2 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">
           Let's build something <span className="text-primary">great</span>{" "}
           together.
@@ -56,7 +56,7 @@ export default function Contact() {
               <textarea
                 className="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg p-4 focus:ring-primary focus:border-primary transition-all placeholder:text-slate-400 resize-none"
                 placeholder="Tell us about your project requirements..."
-                rows="5"
+                rows={5}
               ></textarea>
             </div>
             <button

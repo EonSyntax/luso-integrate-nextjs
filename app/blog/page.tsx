@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Blog() {
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <main className="max-w-7xl pt-30 mx-auto px-4 sm:px-6 lg:px-8 py-10">
       {/* <!-- Hero Section: Featured Post --> */}
       <section className="mb-16">
         <div className="relative overflow-hidden rounded-2xl bg-background-dark min-h-125 flex items-end">

@@ -1,10 +1,21 @@
-
-
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen font-manrope flex items-center hero-gradient">
+      <section className="relative min-h-screen pt-12 md:pt-16 font-manrope flex items-center hero-gradient">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/mec.webm" type="video/webm" />
+        </video>
+        {/* Dark overlay to reduce video potency */}
+        <div className="absolute inset-0 bg-background-dark/70 z-5"></div>
+        <div className="absolute inset-0 bg-background-dark/20 z-5"></div>
         <div className="absolute inset-0 z-0 opacity-20 overflow-hidden pointer-events-none">
           <svg
             className="absolute -top-24 -right-24 w-1/2 h-full text-primary"
@@ -16,18 +27,18 @@ export default function Home() {
         </div>
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 text-background-dark dark:text-primary font-bold text-xs tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 text-white dark:text-primary font-bold text-xs tracking-widest uppercase">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
               Strategy &amp; Engineering
             </div>
-            <h1 className="text-5xl md:text-7xl font-800 leading-[1.1] tracking-tight text-slate-900 dark:text-white">
+            <h1 className="text-5xl md:text-7xl font-800 leading-[1.1] tracking-tight text-white dark:text-white">
               Elevating Brands. <br />
               <span className="text-primary italic">Engineering</span> Growth.
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed font-medium">
+            <p className="text-lg md:text-xl text-primary dark:text-slate-400 max-w-lg leading-relaxed font-medium">
               Strategic Branding &amp; Engineering Solutions designed to scale
               your business. We bridge the gap between creative vision and
               technical excellence with Nigerian insights and UK standards.
@@ -37,14 +48,14 @@ export default function Home() {
                 Explore Services
                 <span className="material-symbols-outlined">arrow_forward</span>
               </button>
-              <button className="border-2 border-slate-200 dark:border-slate-800 px-8 py-4 rounded-xl font-bold text-base hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
+              <button className="border-2 border-slate-200 dark:border-slate-800 px-8 py-4 rounded-xl font-bold text-white hover:text-surface-dark dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
                 Get a Quote
               </button>
             </div>
           </div>
           <div className="relative group">
             <div className="absolute -inset-4 bg-primary/20 rounded-2xl blur-2xl group-hover:bg-primary/30 transition-all duration-700"></div>
-            <div className="relative bg-slate-200 dark:bg-slate-800 rounded-2xl overflow-hidden aspect-square shadow-2xl">
+            <div className="relative hidden md:block bg-slate-200 dark:bg-slate-800 rounded-2xl overflow-hidden aspect-square shadow-2xl">
               <img
                 alt="Professional team collaborating in a modern office space"
                 className="w-full h-full object-cover"
@@ -66,7 +77,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover grayscale-0 md:grayscale md:hover:grayscale-0 transition-all duration-700"
                   data-alt="Modern collaborative business meeting in a minimalist office space"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4JfNRTmapTX1mgvpQ4Xe04FBuh2xQaY2H_iadqIz6TUyXh6Ny_BwNZHqSAaZqvJpWs-RBub1ptWxd7cj61r8kkMNMQMIv5RFOUYXNjvaOpiPkLRfJwvWOSCOt3K-i4dVUFC2XMK14iVMXUdrLDYYeMiXpEpS_CkfP99OasNDdNNgM1DmskO04QUF0rhhJXegyzyFxJPP5EiuGOP_GHE-kwjpxkiENqtWYxlkqID2y_MVripSaxFDY1RFO3Rch9u1Zvp8ZFCk8vy43"
                 />
@@ -351,7 +362,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="aspect-4/5 rounded-2xl overflow-hidden mb-6 bg-slate-200 relative">
                 <img
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover grayscale-0 md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   data-alt="Abstract modern branding concept with clean typography"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3b2VLjVgiueyTishAcZs1hs8RCBDnLeFRf4_NFZUmSV9TJl6HFjLWDWnQwyB7HLBn3lY9KWyoGoaxf-_8BfmeWpgrEIetShDvMt84T7Z5g_TCfQ8bdvkIP-yLpZeTMk47lGygC7MSzsGjVrSrbm2iXwQu6Xdv3st-P7GjMYVrkug02gxTbjoH3FZGW0ckOlvDrH7zZBHm9TsOByZFuihR5KSHzzK7xTjWCRDzllNSKPxavJ8NfzFC6F0sBuEGBtcBWwhtB_kdzkfM"
                 />
@@ -372,7 +383,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="aspect-4/5 rounded-2xl overflow-hidden mb-6 bg-slate-200 relative">
                 <img
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover grayscale-0 md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   data-alt="Digital product design interface showcased on a laptop"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDQetqkYNb66tNSpZj2e-AyqBWje1mfeys2Joa7uHrwUnrlQF_LbVVzuyf9zJWMeM9_zhx1CWBizgjUtjCqa26OpGNKJKLVtfbvunpmtLUqV1tXcC1zxouYspOlaC2N8OMpqN1gDHVwREPXIIHGzZ2hFGcGigQ8IfDo_Gi1oWO3pl6lU2kAXGE_wCdbo7zDVzus-F-Sb00Xm4ptbdVj9sytrTIzA-7xiZHjh04dc78HJghdXODK0HKcMPYa3Cnb32LRO4zjYWirs4j"
                 />
@@ -393,7 +404,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="aspect-4/5 rounded-2xl overflow-hidden mb-6 bg-slate-200 relative">
                 <img
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover grayscale-0 md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   data-alt="Creative directional photography for a premium brand"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz2bo2mNoDdZM85lj06GtRrtrfRZ-6Z8Nl1EcVCXBrUoJCGy9xJryfMVh3TV7K9cXK3pzaQ-qnFfrSyfYkugdvp-hC06foGQueFaT6HlC9t7JB1iy9ORj75vFVlEFi8OEQGAy17UuIbLdS8o-Y4P3UFJumrQbY2y5j98mxQOKkzSg7L6oRsMLwEKmIVJSsGovBrB9sUWZU3PXXIjLFn3S-DjUh1wiwlujIBOJkVOr6Ui2mSmpT-Lx0Yx-YIlfd4eiC43eiMOitXfkd"
                 />
@@ -470,7 +481,7 @@ export default function Home() {
                 d="M0 100 C 20 0 50 0 100 100"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="0.5"
+                strokeWidth="0.5"
               ></path>
             </svg>
           </div>
