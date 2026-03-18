@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./components/theme-provider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,7 +16,6 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Luso Integrate",
   description: "Branding the future of integration",
-  viewport: "width=device-width, initial-scale=1.0",
   icons: [
     { rel: "icon", url: "/favicon.ico" },
     { rel: "icon", url: "/favicon-32x32.png", sizes: "32x32" },
@@ -24,19 +24,24 @@ export const metadata: Metadata = {
   ],
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
+
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="manifest" href="../public/site.webmanifest" />
-        <link
+        <link rel="manifest" href="../site.webmanifest" />
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
           rel="stylesheet"
-        />
+        /> */}
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
@@ -49,7 +54,15 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${manrope.variable} antialiased bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 overflow-x-hidden`}
       >
-        {children}
+        <ThemeProvider
+          // forcedTheme="light"
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

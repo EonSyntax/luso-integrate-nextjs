@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeSwitcher } from "./theme-switcher";
 
 export const Navbar = () => {
   return (
@@ -10,6 +11,12 @@ export const Navbar = () => {
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 bg-background-dark/15 backdrop-blur-md px-8 py-3 rounded-full border border-white/10">
+          <Link
+            className="text-sm font-medium uppercase text-white dark:text-slate-300 hover:text-primary transition-colors"
+            href="/"
+          >
+            Home
+          </Link>
           <Link
             className="text-sm font-medium uppercase text-white dark:text-slate-300 hover:text-primary transition-colors"
             href="/about"
@@ -32,9 +39,12 @@ export const Navbar = () => {
             Contact
           </Link>
         </nav>
-        <button className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all transform active:scale-95 shadow-lg shadow-primary/20">
+        <div>
+        <Link href="/pricing" className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all transform active:scale-95 shadow-lg shadow-primary/20">
           Get a Quote
-        </button>
+        </Link>
+        <ThemeSwitcher />
+        </div>
       </header>
     </>
   );

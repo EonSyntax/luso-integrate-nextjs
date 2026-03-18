@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 :root {
   --primary: #bad955;
   --accent-gold: #d4af37;
@@ -18,16 +20,7 @@
   --color-surface-dark: var(--surface-dark);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
   /* padding-top: 5rem; */
 }

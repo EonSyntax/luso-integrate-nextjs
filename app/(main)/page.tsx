@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
@@ -44,13 +46,13 @@ export default function Home() {
               technical excellence with Nigerian insights and UK standards.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <button className="bg-primary text-background-dark px-8 py-4 rounded-xl font-bold text-base hover:shadow-2xl hover:shadow-primary/30 transition-all flex items-center gap-2">
+              <Link href="/services" className="bg-primary text-background-dark px-8 py-4 rounded-xl font-bold text-base hover:shadow-2xl hover:shadow-primary/30 transition-all flex items-center gap-2">
                 Explore Services
                 <span className="material-symbols-outlined">arrow_forward</span>
-              </button>
-              <button className="border-2 border-slate-200 dark:border-slate-800 px-8 py-4 rounded-xl font-bold text-white hover:text-surface-dark dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
+              </Link>
+              <Link href="/pricing" className="border-2 border-slate-200 dark:border-slate-800 px-8 py-4 rounded-xl font-bold text-white hover:text-surface-dark dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
                 Get a Quote
-              </button>
+              </Link>
             </div>
           </div>
           <div className="relative group">
@@ -69,7 +71,7 @@ export default function Home() {
 
       {/* Storytelling About Section */}
       <section
-        className="py-24 bg-white font-inter dark:bg-background-dark"
+        className="py-24 bg-background-dark font-inter dark:bg-background-dark"
         id="about"
       >
         <div className="max-w-7xl mx-auto px-6">
@@ -93,10 +95,10 @@ export default function Home() {
               <div className="inline-block text-primary font-bold tracking-[0.2em] uppercase text-sm">
                 Our Philosophy
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight">
+              <h2 className="text-4xl md:text-5xl font-black text-white dark:text-white leading-tight">
                 Beyond Aesthetics: Innovation &amp; Transformation
               </h2>
-              <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="text-lg text-slate-400 dark:text-slate-400 leading-relaxed">
                 At LUSO INTEGRATE, we believe a brand is more than just a
                 logo—it's a strategic engine. We don't just build visual
                 identities; we engineer business systems that scale. Our
@@ -109,7 +111,7 @@ export default function Home() {
                     bolt
                   </span>
                   <div>
-                    <h4 className="font-bold text-slate-900 dark:text-white mb-1">
+                    <h4 className="font-bold text-white dark:text-white mb-1">
                       Growth First
                     </h4>
                     <p className="text-sm text-slate-500">
@@ -123,7 +125,7 @@ export default function Home() {
                     biotech
                   </span>
                   <div>
-                    <h4 className="font-bold text-slate-900 dark:text-white mb-1">
+                    <h4 className="font-bold text-white dark:text-white mb-1">
                       Tech Infused
                     </h4>
                     <p className="text-sm text-slate-500">
@@ -143,10 +145,10 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-background-dark text-white border-y border-white/5">
+      <section className="py-20 bg-background-light text-white border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center">
-            <div className="space-y-2">
+            <div className="space-y-2 border-4 rounded-2xl pb-4 bg-background-dark border-background-dark pt-4">
               <div className="text-4xl md:text-5xl font-800 text-primary">
                 150+
               </div>
@@ -154,7 +156,7 @@ export default function Home() {
                 Brands Transformed
               </div>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 border-4 rounded-2xl pb-4 bg-background-dark border-background-dark pt-4">
               <div className="text-4xl md:text-5xl font-800 text-primary">
                 320+
               </div>
@@ -162,7 +164,7 @@ export default function Home() {
                 Projects Delivered
               </div>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 border-4 rounded-2xl pb-4 bg-background-dark border-background-dark pt-4">
               <div className="text-4xl md:text-5xl font-800 text-primary">
                 12+
               </div>
@@ -170,7 +172,7 @@ export default function Home() {
                 Global Awards
               </div>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 border-4 rounded-2xl pb-4 bg-background-dark border-background-dark pt-4">
               <div className="text-4xl md:text-5xl font-800 text-primary">
                 99%
               </div>
@@ -184,20 +186,20 @@ export default function Home() {
 
       {/* Our Services Section */}
       <section
-        className="py-24 bg-slate-50 font-inter dark:bg-slate-900/50"
+        className="py-24 bg-background-dark font-inter dark:bg-slate-900/50"
         id="services"
       >
         <div className="max-w-4xl mx-auto px-6 text-center mb-12">
           <h2 className="text-sm font-bold font-manrope text-primary tracking-widest uppercase mb-4">
             Core Expertise
           </h2>
-          <h3 className="text-3xl font-manrope md:text-4xl font-800 text-slate-900 dark:text-white">
+          <h3 className="text-3xl font-manrope md:text-4xl font-800 text-white dark:text-white">
             Comprehensive Solutions Designed for Sustainable Market Dominance.
           </h3>
         </div>
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-8">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-8">
           {/* Branding Division */}
-          <div className="group p-10 bg-background-light dark:bg-surface-dark rounded-3xl border-t-4 border-primary shadow-xl shadow-slate-200/50 dark:shadow-none hover:-translate-y-2 transition-all duration-500">
+          <div className="group p-10 bg-slate-900/50 dark:bg-surface-dark rounded-3xl border-t-4 border-primary shadow-xl shadow-slate-200/50 dark:shadow-none hover:-translate-y-2 transition-all duration-500">
             <div className="flex items-center justify-between mb-8">
               <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
                 <span className="material-symbols-outlined text-4xl">
@@ -208,7 +210,7 @@ export default function Home() {
                 Division 01
               </span>
             </div>
-            <h3 className="text-3xl font-black mb-6 text-slate-900 dark:text-white">
+            <h3 className="text-3xl font-black mb-6 text-white dark:text-white">
               Branding Development
             </h3>
             <p className="text-slate-500 mb-10 leading-relaxed">
@@ -216,25 +218,25 @@ export default function Home() {
               your audience and command premium positioning.
             </p>
             <div className="grid grid-cols-2 gap-4">
-              <div className="p-4 bg-white dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
                 <h4 className="font-bold text-sm mb-1">Visual Identity</h4>
                 <p className="text-xs text-slate-400">
                   Logos, Typography, UI/UX
                 </p>
               </div>
-              <div className="p-4 bg-white dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
                 <h4 className="font-bold text-sm mb-1">Creative Direction</h4>
                 <p className="text-xs text-slate-400">
                   Conceptual Art, Styling
                 </p>
               </div>
-              <div className="p-4 bg-white dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
                 <h4 className="font-bold text-sm mb-1">Digital Presence</h4>
                 <p className="text-xs text-slate-400">
                   Web &amp; Mobile Ecosystems
                 </p>
               </div>
-              <div className="p-4 bg-white dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
                 <h4 className="font-bold text-sm mb-1">Content Strategy</h4>
                 <p className="text-xs text-slate-400">
                   Narrative &amp; Asset Dev
@@ -242,8 +244,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+          
           {/* Strategy Division */}
-          <div className="group p-10 bg-background-light dark:bg-surface-dark rounded-3xl border-t-4 border-primary shadow-xl shadow-slate-200/50 dark:shadow-none hover:-translate-y-2 transition-transform duration-500">
+          <div className="group p-10 bg-slate-900/50 dark:bg-surface-dark rounded-3xl border-t-4 border-primary shadow-xl shadow-slate-200/50 dark:shadow-none hover:-translate-y-2 transition-transform duration-500">
             <div className="flex items-center justify-between mb-8">
               <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
                 <span className="material-symbols-outlined text-4xl">
@@ -254,7 +257,7 @@ export default function Home() {
                 Division 02
               </span>
             </div>
-            <h3 className="text-3xl font-black mb-6 text-slate-900 dark:text-white">
+            <h3 className="text-3xl font-black mb-6 text-white dark:text-white">
               Business Strategy
             </h3>
             <p className="text-slate-500 mb-10 leading-relaxed">
@@ -262,26 +265,73 @@ export default function Home() {
               based on hard data and competitive intelligence.
             </p>
             <div className="grid grid-cols-2 gap-4">
-              <div className="p-4 bg-white dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
                 <h4 className="font-bold text-sm mb-1">Business Model</h4>
                 <p className="text-xs text-slate-400">
                   Optimization &amp; Revenue
                 </p>
               </div>
-              <div className="p-4 bg-white dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
                 <h4 className="font-bold text-sm mb-1">Positioning</h4>
                 <p className="text-xs text-slate-400">
                   Competitive Edge &amp; USP
                 </p>
               </div>
-              <div className="p-4 bg-white dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
                 <h4 className="font-bold text-sm mb-1">GTM Strategy</h4>
                 <p className="text-xs text-slate-400">Market Launch Systems</p>
               </div>
-              <div className="p-4 bg-white dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
                 <h4 className="font-bold text-sm mb-1">Strategic Planning</h4>
                 <p className="text-xs text-slate-400">
                   Scalability &amp; Roadmaps
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Innovation Division */}
+          <div className="group p-10 bg-slate-900/50 dark:bg-surface-dark rounded-3xl border-t-4 border-primary shadow-xl shadow-slate-200/50 dark:shadow-none hover:-translate-y-2 transition-all duration-500">
+            <div className="flex items-center justify-between mb-8">
+              <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
+                <span className="material-symbols-outlined text-4xl">
+                  palette
+                </span>
+              </div>
+              <span className="text-primary font-black text-sm uppercase tracking-widest">
+                Division 03
+              </span>
+            </div>
+            <h3 className="text-3xl font-black mb-6 text-white dark:text-white">
+              Innovation
+            </h3>
+            <p className="text-slate-500 mb-10 leading-relaxed">
+              Crafting immersive brand experiences that resonate deeply with
+              your audience and command premium positioning.
+            </p>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+                <h4 className="font-bold text-sm mb-1">Visual Identity</h4>
+                <p className="text-xs text-slate-400">
+                  Logos, Typography, UI/UX
+                </p>
+              </div>
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+                <h4 className="font-bold text-sm mb-1">Creative Direction</h4>
+                <p className="text-xs text-slate-400">
+                  Conceptual Art, Styling
+                </p>
+              </div>
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+                <h4 className="font-bold text-sm mb-1">Digital Presence</h4>
+                <p className="text-xs text-slate-400">
+                  Web &amp; Mobile Ecosystems
+                </p>
+              </div>
+              <div className="p-4 bg-background-dark dark:bg-background-dark/50 rounded-xl border-t-4 border-primary dark:border-primary group-hover:shadow-lg transition-all">
+                <h4 className="font-bold text-sm mb-1">Content Strategy</h4>
+                <p className="text-xs text-slate-400">
+                  Narrative &amp; Asset Dev
                 </p>
               </div>
             </div>
@@ -290,38 +340,38 @@ export default function Home() {
       </section>
 
       {/* Client Logo Carousel */}
-      <div className="py-12 bg-background-dark dark:bg-background-dark overflow-hidden border-y border-slate-100 dark:border-white/5">
+      <div className="py-12 bg-background-light dark:bg-background-dark overflow-hidden border-y border-slate-100 dark:border-white/5">
         <div className="animate-marquee gap-20">
           {/* Logos (repeated for loop) */}
-          <div className="w-60 h-16 grayscale opacity-40 hover:opacity-100 transition-opacity flex items-center justify-center font-bold text-2xl text-slate-400">
+          <div className="w-60 h-16 flex items-center justify-center font-bold text-2xl text-slate-400">
             NEXUS GLOBAL
           </div>
-          <div className="w-60 h-16 grayscale opacity-40 hover:opacity-100 transition-opacity flex items-center justify-center font-bold text-2xl text-slate-400">
+          <div className="w-60 h-16 flex items-center justify-center font-bold text-2xl text-slate-400">
             VANTAGE
           </div>
-          <div className="w-60 h-16 grayscale opacity-40 hover:opacity-100 transition-opacity flex items-center justify-center font-bold text-2xl text-slate-400">
-            ALTOS VENTURES
+          <div className="w-60 h-16 flex items-center justify-center font-bold text-2xl text-slate-400">
+            ALTOS VENTURE
           </div>
-          <div className="w-60 h-16 grayscale opacity-40 hover:opacity-100 transition-opacity flex items-center justify-center font-bold text-2xl text-slate-400">
+          <div className="w-60 h-16 flex items-center justify-center font-bold text-2xl text-slate-400">
             PRIMO TECH
           </div>
-          <div className="w-60 h-16 grayscale opacity-40 hover:opacity-100 transition-opacity flex items-center justify-center font-bold text-2xl text-slate-400">
-            ORION SYSTEMS
+          <div className="w-60 h-16 flex items-center justify-center font-bold text-2xl text-slate-400">
+            ORION SYSTEM
           </div>
           {/* Repeat */}
-          <div className="w-60 h-16 grayscale opacity-40 hover:opacity-100 transition-opacity flex items-center justify-center font-bold text-2xl text-slate-400">
+          <div className="w-60 h-16 flex items-center justify-center font-bold text-2xl text-slate-400">
             NEXUS GLOBAL
           </div>
-          <div className="w-60 h-16 grayscale opacity-40 hover:opacity-100 transition-opacity flex items-center justify-center font-bold text-2xl text-slate-400">
+          <div className="w-60 h-16 flex items-center justify-center font-bold text-2xl text-slate-400">
             VANTAGE
           </div>
-          <div className="w-60 h-16 grayscale opacity-40 hover:opacity-100 transition-opacity flex items-center justify-center font-bold text-2xl text-slate-400">
+          <div className="w-60 h-16 flex items-center justify-center font-bold text-2xl text-slate-400">
             ALTOS VENTURES
           </div>
-          <div className="w-60 h-16 grayscale opacity-40 hover:opacity-100 transition-opacity flex items-center justify-center font-bold text-2xl text-slate-400">
+          <div className="w-60 h-16 flex items-center justify-center font-bold text-2xl text-slate-400">
             PRIMO TECH
           </div>
-          <div className="w-60 h-16 grayscale opacity-40 hover:opacity-100 transition-opacity flex items-center justify-center font-bold text-2xl text-slate-400">
+          <div className="w-60 h-16 flex items-center justify-center font-bold text-2xl text-slate-400">
             ORION SYSTEMS
           </div>
         </div>
@@ -329,7 +379,7 @@ export default function Home() {
 
       {/* Portfolio Grid */}
       <section
-        className="py-24 bg-background-light dark:bg-background-dark"
+        className="py-24 bg-background-dark dark:bg-background-dark"
         id="portfolio"
       >
         <div className="max-w-7xl mx-auto px-6">
@@ -338,7 +388,7 @@ export default function Home() {
               <h2 className="text-sm font-bold font-manrope text-primary tracking-widest uppercase">
                 Selected Works
               </h2>
-              <h3 className="text-4xl font-800 font-manrope text-slate-900 dark:text-white">
+              <h3 className="text-4xl font-800 font-manrope text-white dark:text-white">
                 Selected Success Stories.
               </h3>
             </div>
@@ -362,7 +412,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="aspect-4/5 rounded-2xl overflow-hidden mb-6 bg-slate-200 relative">
                 <img
-                  className="w-full h-full object-cover grayscale-0 md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
                   data-alt="Abstract modern branding concept with clean typography"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3b2VLjVgiueyTishAcZs1hs8RCBDnLeFRf4_NFZUmSV9TJl6HFjLWDWnQwyB7HLBn3lY9KWyoGoaxf-_8BfmeWpgrEIetShDvMt84T7Z5g_TCfQ8bdvkIP-yLpZeTMk47lGygC7MSzsGjVrSrbm2iXwQu6Xdv3st-P7GjMYVrkug02gxTbjoH3FZGW0ckOlvDrH7zZBHm9TsOByZFuihR5KSHzzK7xTjWCRDzllNSKPxavJ8NfzFC6F0sBuEGBtcBWwhtB_kdzkfM"
                 />
@@ -375,7 +425,7 @@ export default function Home() {
               <div className="text-xs font-bold text-primary uppercase tracking-widest mb-2">
                 Branding &amp; Strategy
               </div>
-              <h4 className="text-2xl font-black text-slate-900 dark:text-white">
+              <h4 className="text-2xl font-black text-white dark:text-white">
                 NeoBank Identity
               </h4>
             </div>
@@ -383,7 +433,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="aspect-4/5 rounded-2xl overflow-hidden mb-6 bg-slate-200 relative">
                 <img
-                  className="w-full h-full object-cover grayscale-0 md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
                   data-alt="Digital product design interface showcased on a laptop"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDQetqkYNb66tNSpZj2e-AyqBWje1mfeys2Joa7uHrwUnrlQF_LbVVzuyf9zJWMeM9_zhx1CWBizgjUtjCqa26OpGNKJKLVtfbvunpmtLUqV1tXcC1zxouYspOlaC2N8OMpqN1gDHVwREPXIIHGzZ2hFGcGigQ8IfDo_Gi1oWO3pl6lU2kAXGE_wCdbo7zDVzus-F-Sb00Xm4ptbdVj9sytrTIzA-7xiZHjh04dc78HJghdXODK0HKcMPYa3Cnb32LRO4zjYWirs4j"
                 />
@@ -396,7 +446,7 @@ export default function Home() {
               <div className="text-xs font-bold text-primary uppercase tracking-widest mb-2">
                 Digital Transformation
               </div>
-              <h4 className="text-2xl font-black text-slate-900 dark:text-white">
+              <h4 className="text-2xl font-black text-white dark:text-white">
                 Luxe Commerce Ecosystem
               </h4>
             </div>
@@ -404,7 +454,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <div className="aspect-4/5 rounded-2xl overflow-hidden mb-6 bg-slate-200 relative">
                 <img
-                  className="w-full h-full object-cover grayscale-0 md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
                   data-alt="Creative directional photography for a premium brand"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz2bo2mNoDdZM85lj06GtRrtrfRZ-6Z8Nl1EcVCXBrUoJCGy9xJryfMVh3TV7K9cXK3pzaQ-qnFfrSyfYkugdvp-hC06foGQueFaT6HlC9t7JB1iy9ORj75vFVlEFi8OEQGAy17UuIbLdS8o-Y4P3UFJumrQbY2y5j98mxQOKkzSg7L6oRsMLwEKmIVJSsGovBrB9sUWZU3PXXIjLFn3S-DjUh1wiwlujIBOJkVOr6Ui2mSmpT-Lx0Yx-YIlfd4eiC43eiMOitXfkd"
                 />
@@ -417,7 +467,7 @@ export default function Home() {
               <div className="text-xs font-bold text-primary uppercase tracking-widest mb-2">
                 Market Positioning
               </div>
-              <h4 className="text-2xl font-black text-slate-900 dark:text-white">
+              <h4 className="text-2xl font-black text-white dark:text-white">
                 Solaris Growth Roadmap
               </h4>
             </div>
@@ -426,7 +476,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-background-dark font-inter dark:bg-slate-900/50">
+      <section className="py-24 bg-slate-900 font-inter dark:bg-slate-900/50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-sm font-bold font-manrope text-primary tracking-widest uppercase">
@@ -458,7 +508,7 @@ export default function Home() {
                   <h5 className="font-bold text-primary dark:text-white">
                     David Oladipo
                   </h5>
-                  <p className="text-sm text-slate-500 dark:text-primary">
+                  <p className="text-sm text-white dark:text-primary">
                     CEO, Nexus Global Systems
                   </p>
                 </div>

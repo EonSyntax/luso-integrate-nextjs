@@ -18,16 +18,21 @@ export default function About() {
           />
         </div>
         {/* <!-- Content Container --> */}
-        <div className="relative z-20 w-full max-w-5xl px-6 text-center">
-          <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight mb-8">
-            Innovation, Strategy <br />{" "}
-            <span className="text-primary">Growth.</span>
+        <div className="relative z-20 w-full max-w-7xl px-6 text-center">
+          <h1 className="text-primary text-4xl md:text-6xl lg:text-7xl font-black leading-[1.1] tracking-tight mb-8">
+            Branding <span className="text-white"> || </span>
+            <span className="text-primary">Innovation </span>
+            <span className="text-white"> || </span>
+            <span className="text-primary">Strategy.</span>
           </h1>
           <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
             We combine high-end design and cutting-edge technology to bring your
             vision to life. Let’s discuss your next big idea today.
           </p>
-          <Link href="/services" className="flex flex-col sm:flex-row items-center justify-center gap-5">
+          <Link
+            href="/services"
+            className="flex flex-col sm:flex-row items-center justify-center gap-5"
+          >
             <button className="w-full sm:w-auto min-w-55 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white h-16 px-6 rounded-xl text-lg font-bold transition-all flex items-center justify-center gap-2">
               <span>View Our Work</span>
               <span className="material-symbols-outlined">arrow_forward</span>
@@ -65,62 +70,12 @@ export default function About() {
           <span className="text-white/30 text-[10px] uppercase tracking-[0.3em] font-bold">
             Discover
           </span>
-          <div className="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
-        </div>
-      </section>
-
-      {/* Pillars Section (Mission, Vision, Values) */}
-      <section className="py-20 bg-white dark:bg-slate-900/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Mission */}
-            <div className="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors group">
-              <div className="size-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-slate-900">
-                  target
-                </span>
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                To integrate innovative strategies that drive meaningful impact
-                for our clients, fostering an ecosystem of sustainable
-                development and technological advancement.
-              </p>
-            </div>
-            {/* Vision */}
-            <div className="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors group">
-              <div className="size-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-slate-900">
-                  visibility
-                </span>
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                Becoming the global benchmark for strategic business
-                transformation, where every partnership results in a legacy of
-                excellence and measurable progress.
-              </p>
-            </div>
-            {/* Values */}
-            <div className="p-8 rounded-2xl bg-background-light dark:bg-background-dark border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors group">
-              <div className="size-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-slate-900">
-                  verified_user
-                </span>
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Core Values</h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                Integrity, Excellence, and Collaborative Innovation form the
-                bedrock of our operations, ensuring we deliver value that
-                transcends basic metrics.
-              </p>
-            </div>
-          </div>
+          <div className="w-px h-12 bg-linear-to-b from-primary to-transparent"></div>
         </div>
       </section>
 
       {/* Why Choose Us / Storytelling */}
-      <section className="py-24">
+      <section className="py-24 bg-background-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2 relative">
@@ -140,13 +95,13 @@ export default function About() {
               </div>
             </div>
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-bold mb-6">The Story of LUSO</h2>
-              <p className="text-slate-600 dark:text-slate-400 text-lg mb-6 leading-relaxed">
+              <h2 className="text-4xl text-white font-bold mb-6">The Story of LUSO</h2>
+              <p className="text-slate-400 dark:text-slate-400 text-lg mb-6 leading-relaxed">
                 Founded on the principle that strategy should be more than just
                 a document, LUSO INTEGRATE was born from a desire to bridge the
                 gap between high-level innovation and ground-level execution.
               </p>
-              <p className="text-slate-600 dark:text-slate-400 text-lg mb-8 leading-relaxed">
+              <p className="text-slate-400 dark:text-slate-400 text-lg mb-8 leading-relaxed">
                 We don't just consult; we integrate. Our methodology combines
                 deep industry expertise with a storytelling approach to build
                 brands that resonance and scale in a crowded digital landscape.
@@ -157,7 +112,7 @@ export default function About() {
                     check_circle
                   </span>
                   <div>
-                    <h4 className="font-bold">Tailored Strategies</h4>
+                    <h4 className="font-bold text-white">Tailored Strategies</h4>
                     <p className="text-sm text-slate-500">
                       Custom solutions for unique challenges.
                     </p>
@@ -168,13 +123,67 @@ export default function About() {
                     check_circle
                   </span>
                   <div>
-                    <h4 className="font-bold">Expert Leadership</h4>
+                    <h4 className="font-bold text-white">Expert Leadership</h4>
                     <p className="text-sm text-slate-500">
                       Decades of collective experience.
                     </p>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pillars Section (Mission, Vision, Values) */}
+      <section className="py-20 bg-white dark:bg-slate-900/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Mission */}
+            <div className="p-8 rounded-2xl bg-background-dark dark:bg-background-dark border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors group">
+              <div className="size-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                <span className="material-symbols-outlined text-primary group-hover:text-slate-900">
+                  target
+                </span>
+              </div>
+              <h3 className="text-2xl text-white font-bold mb-4">
+                Our Mission
+              </h3>
+              <p className="text-slate-400 dark:text-slate-400 leading-relaxed">
+                To integrate innovative strategies that drive meaningful impact
+                for our clients, fostering an ecosystem of sustainable
+                development and technological advancement.
+              </p>
+            </div>
+            {/* Vision */}
+            <div className="p-8 rounded-2xl bg-background-dark dark:bg-background-dark border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors group">
+              <div className="size-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                <span className="material-symbols-outlined text-primary group-hover:text-slate-900">
+                  visibility
+                </span>
+              </div>
+              <h3 className="text-2xl text-white font-bold mb-4">Our Vision</h3>
+              <p className="text-slate-400 dark:text-slate-400 leading-relaxed">
+                Becoming the global benchmark for strategic business
+                transformation, where every partnership results in a legacy of
+                excellence and measurable progress.
+              </p>
+            </div>
+            {/* Values */}
+            <div className="p-8 rounded-2xl bg-background-dark dark:bg-background-dark border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors group">
+              <div className="size-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                <span className="material-symbols-outlined text-primary group-hover:text-slate-900">
+                  verified_user
+                </span>
+              </div>
+              <h3 className="text-2xl text-white font-bold mb-4">
+                Core Values
+              </h3>
+              <p className="text-slate-400 dark:text-slate-400 leading-relaxed">
+                Integrity, Excellence, and Collaborative Innovation form the
+                bedrock of our operations, ensuring we deliver value that
+                transcends basic metrics.
+              </p>
             </div>
           </div>
         </div>

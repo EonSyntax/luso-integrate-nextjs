@@ -36,7 +36,7 @@ export default function Services() {
             data-purpose="content-left"
           >
             <div className="max-w-xl animate-slide-up">
-              <span className="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-widest uppercase bg-primary text-white rounded-sm">
+              <span className="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-widest uppercase bg-primary text-white rounded-xl">
                 Est. 2024
               </span>
               <h1 className="font-display text-6xl lg:text-8xl xl:text-9xl mb-8 leading-[0.9] text-background-dark overlap-text relative">
@@ -58,7 +58,7 @@ export default function Services() {
                   View About Us
                 </Link>
                 <Link
-                  className="px-8 py-4 border-2 border-background-dark text-background-dark font-semibold hover:bg-background-dark hover:text-white transition-all duration-300"
+                  className="px-8 py-4 border-2 border-primary text-background-dark font-semibold hover:bg-background-dark hover:border-background-dark hover:text-white transition-all duration-300"
                   data-purpose="cta-secondary"
                   href="/contact"
                 >
@@ -87,9 +87,9 @@ export default function Services() {
               data-purpose="floating-caption"
             >
               <div className="flex items-center gap-4">
-                <span className="h-px w-12 bg-white"></span>
-                <p className="text-sm font-light tracking-widest uppercase">
-                  Project: Neon Horizon (2024)
+                <span className="h-px w-12 bg-primary"></span>
+                <p className="text-sm font-light text-background-dark tracking-widest uppercase">
+                  Project: Neon Horizon (2026)
                 </p>
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function Services() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Brand Strategy */}
-            <div className="service-card group bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
+            <div className="service-card group bg-background-dark dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
               <div className="flex justify-between items-start mb-6">
                 <span className="material-symbols-outlined service-icon text-4xl text-primary bg-primary/10 p-3 rounded-lg">
                   explore
@@ -124,8 +124,8 @@ export default function Services() {
                   Division: Branding
                 </span>
               </div>
-              <h3 className="text-xl font-bold mb-4">Brand Strategy</h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-6 line-clamp-3">
+              <h3 className="text-xl text-white font-bold mb-4">Brand Strategy</h3>
+              <p className="text-slate-300 dark:text-slate-400 mb-6 line-clamp-3">
                 Define your purpose, vision, and internal alignment to create a
                 solid foundation for all future growth and market entry.
               </p>
@@ -134,19 +134,19 @@ export default function Services() {
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>Competitive Benchmarking</span>
+                  <span className="text-white">Competitive Benchmarking</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm font-medium">
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>Brand Archetype &amp; Persona</span>
+                  <span className="text-white">Brand Archetype &amp; Persona</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm font-medium">
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>Tone of Voice Guidelines</span>
+                  <span className="text-white">Tone of Voice Guidelines</span>
                 </div>
               </div>
               <div className="pt-6 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
@@ -162,7 +162,7 @@ export default function Services() {
               </div>
             </div>
             {/* Creative Design */}
-            <div className="service-card group bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
+            <div className="service-card group bg-background-dark dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
               <div className="flex justify-between items-start mb-6">
                 <span className="material-symbols-outlined service-icon text-4xl text-primary bg-primary/10 p-3 rounded-lg">
                   palette
@@ -171,8 +171,8 @@ export default function Services() {
                   Division: Branding
                 </span>
               </div>
-              <h3 className="text-xl font-bold mb-4">Creative Design</h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-6 line-clamp-3">
+              <h3 className="text-xl text-white font-bold mb-4">Creative Design</h3>
+              <p className="text-slate-300 dark:text-slate-400 mb-6 line-clamp-3">
                 Visual identity systems including logos, color palettes, and
                 full brand books that ensure consistency across all touchpoints.
               </p>
@@ -181,19 +181,19 @@ export default function Services() {
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>Logo &amp; Visual Identity</span>
+                  <span className="text-white">Logo &amp; Visual Identity</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm font-medium">
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>Corporate Stationery</span>
+                  <span className="text-white">Corporate Stationery</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm font-medium">
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>Comprehensive Brand Book</span>
+                  <span className="text-white">Comprehensive Brand Book</span>
                 </div>
               </div>
               <div className="pt-6 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
@@ -209,7 +209,7 @@ export default function Services() {
               </div>
             </div>
             {/* Digital Experience */}
-            <div className="service-card group bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
+            <div className="service-card group bg-background-dark dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
               <div className="flex justify-between items-start mb-6">
                 <span className="material-symbols-outlined service-icon text-4xl text-primary bg-primary/10 p-3 rounded-lg">
                   devices
@@ -218,8 +218,8 @@ export default function Services() {
                   Division: Branding
                 </span>
               </div>
-              <h3 className="text-xl font-bold mb-4">Digital Experience</h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-6 line-clamp-3">
+              <h3 className="text-xl text-white font-bold mb-4">Digital Experience</h3>
+              <p className="text-slate-300 dark:text-slate-400 mb-6 line-clamp-3">
                 Designing UI/UX that converts. We create intuitive digital
                 interfaces that reflect your brand’s authority and ease of use.
               </p>
@@ -228,19 +228,19 @@ export default function Services() {
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>User Experience (UX) Research</span>
+                  <span className="text-white">User Experience (UX) Research</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm font-medium">
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>User Interface (UI) Design</span>
+                  <span className="text-white">User Interface (UI) Design</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm font-medium">
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>Interaction Prototypes</span>
+                  <span className="text-white">Interaction Prototypes</span>
                 </div>
               </div>
               <div className="pt-6 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
@@ -256,7 +256,7 @@ export default function Services() {
               </div>
             </div>
             {/* Content Production */}
-            <div className="service-card group bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
+            <div className="service-card group bg-background-dark dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 hover:shadow-xl transition-all">
               <div className="flex justify-between items-start mb-6">
                 <span className="material-symbols-outlined service-icon text-4xl text-primary bg-primary/10 p-3 rounded-lg">
                   movie_edit
@@ -265,8 +265,8 @@ export default function Services() {
                   Division: Branding
                 </span>
               </div>
-              <h3 className="text-xl font-bold mb-4">Content Production</h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-6 line-clamp-3">
+              <h3 className="text-xl text-white font-bold mb-4">Content Production</h3>
+              <p className="text-slate-300 dark:text-slate-400 mb-6 line-clamp-3">
                 Storytelling that resonates. From cinematic video production to
                 high-impact copywriting and photography.
               </p>
@@ -275,19 +275,19 @@ export default function Services() {
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>Professional Copywriting</span>
+                  <span className="text-white">Professional Copywriting</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm font-medium">
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>Commercial Photography</span>
+                  <span className="text-white">Commercial Photography</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm font-medium">
                   <span className="material-symbols-outlined text-primary text-lg">
                     check_circle
                   </span>
-                  <span>Video Storytelling &amp; Reels</span>
+                  <span className="text-white">Video Storytelling &amp; Reels</span>
                 </div>
               </div>
               <div className="pt-6 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
